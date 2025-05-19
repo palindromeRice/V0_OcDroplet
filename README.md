@@ -1,4 +1,4 @@
-# 🧠 AWS Chatbot
+# 🧠 CB Chatbot
 
 A unified, multi-modal chatbot for code assistance, supporting both **text and audio input**, with **language detection**, **code verification**, and **correction**.
 
