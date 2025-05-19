@@ -221,11 +221,11 @@ Response:
 | `REDIS_HOST`              | Redis host address                                 | `172.17.0.1`                                |
 | `REDIS_PORT`              | Redis port                                         | `6379`                                      |
 | `LANG_MODEL_PATH`         | Language model path                                | `/model/programming-language-identification` |
-| `CHATBOT_CHAT_URL`        | Chat endpoint URL                                  | `http://localhost:8000/chat`               |
-| `CHATBOT_CLEAR_URL`       | Clear session endpoint                             | `http://localhost:8000/clear`              |
+| `CHATBOT_CHAT_URL`        | Chat endpoint URL                                  | `http://206.189.134.128:8000/chat`               |
+| `CHATBOT_CLEAR_URL`       | Clear session endpoint                             | `http://206.189.134.128:8000/clear`              |
 | `USE_STRUCTURED_MODEL`    | Enable structured output (`true` / `false`)        | `true`                                      |
 | `OLLAMA_MODEL`            | Generation model                                   | `qwen2.5-coder:3b`                          |
-| `OLLAMA_CORRECTION_MODEL` | Correction model                                   | `smollm2:135m`                              |
+| `Structured Output Model` | Correction model                                   | `smollm2:135m`                              |
 
 ---
 
