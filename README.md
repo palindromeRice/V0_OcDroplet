@@ -13,24 +13,27 @@ A unified, multi-modal chatbot for code assistance, supporting both **text and a
 
 ### 🚀 Getting Started
 
-This guide helps you set up and run the chatbot locally or using Docker.
+This guide helps you run the chatbot using a prebuilt Docker image.
 
 #### Prerequisites
 
-- Docker & Docker Buildx (for cross-platform builds)
+- Docker & Docker Buildx (for cross-platform compatibility)
 - Redis server running locally or on the host machine
 - Ollama server with required models running on the host machine
 - (Optional) GPU for Whisper and LLM acceleration
 
 ---
 
-## 🐳 Quick Start (Docker)
+## 🐳 Quick Start (Docker Image)
 
-### 🧱 Build the Image
+### 🧱 Pull the Image
+
+You do not need to build the image manually — just pull and run the container using the steps below.
 
 ```bash
-docker buildx build --platform linux/amd64 -t palindromerice/chatbot-app:ocV0.0 --push .
+docker pull palindromerice/chatbot-app:ocV0.1-inplace
 ```
+
 
 > Replace the tag (`ocV0.0`) as needed.
 
