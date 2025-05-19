@@ -35,7 +35,7 @@ docker pull palindromerice/chatbot-app:ocV0.1-inplace
 ```
 
 
-> Replace the tag (`ocV0.0`) as needed.
+
 
 ---
 
