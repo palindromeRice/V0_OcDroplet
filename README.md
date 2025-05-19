@@ -77,21 +77,32 @@ Access the services:
 
 ### 🧠 Detect Programming Language
 
-- Send a POST request to `/detect_language/`:
+You can use this endpoint to detect the programming language of any code snippet, which is especially useful for auto-formatting code blocks in the Streamlit frontend.
 
+---
+
+#### 🔁 Endpoint
+`POST /detect_language/`
+
+#### 📤 Request Body
 ```json
 {
   "code": "def hello(): print('hi')"
 }
 ```
 
-Returns:
-
+#### 📥 Response
 ```json
 {
   "language": "python"
 }
 ```
+
+---
+
+### 🖼️ Usage in Streamlit for Auto Formatting
+
+To auto-format code blocks using the detected language, call this endpoint before rendering the code with `st.code`.
 
 ### ➕ Add a New Language Detection Model
 
