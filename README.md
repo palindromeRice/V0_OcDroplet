@@ -43,21 +43,22 @@ docker pull palindromerice/chatbot-app:ocV0.1-inplace
 
 ```bash
 docker run -d --name chatbot_demo \
-  -p 8020:8000 \
-  -p 8521:8501 \
+  --network host \
   -v /root/model:/model \
   -v /root/whisper_cache:/root/.cache/whisper \
-  -e REDIS_HOST=172.17.0.1 \
+  -e REDIS_HOST=127.0.0.1 \
   -e REDIS_PORT=6379 \
-  -e OLLAMA_BASE_URL=http://172.17.0.1:11434/api \
+  -e OLLAMA_BASE_URL=http://127.0.0.1:11434/api \
   -e LANG_MODEL_PATH=/model/programming-language-identification \
   -e OLLAMA_MODEL=qwen2.5-coder:3b \
   -e OLLAMA_CORRECTION_MODEL=smollm2:135m \
-  -e CHATBOT_CHAT_URL=http://localhost:8000/chat \
-  -e CHATBOT_CLEAR_URL=http://localhost:8000/clear \
-  -e USE_STRUCTURED_MODEL=true \
-  palindromerice/chatbot-app:ocV0.1-inplace
+  -e CHATBOT_CHAT_URL="http://127.0.0.1:8000/chat/" \
+  -e CHATBOT_CLEAR_URL="http://127.0.0.1:8000/clear_session/" \
+  -e USE_STRUCTURED_MODEL=false \
+  palindromerice/chatbot-app:ocV0.1-inplace \
+  bash /aws_chatbot/start_services.sh
 ```
+
 
 Access the services:
 
