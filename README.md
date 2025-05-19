@@ -265,6 +265,6 @@ Key packages from `requirements.txt`:
 ## 🙋 Support
 
 See inline code comments and docstrings for guidance.  
-For issues or questions, reach out to the internal development team.
+For issues or questions, reach out to me.
 
 ---
