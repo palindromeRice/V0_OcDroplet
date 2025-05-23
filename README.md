@@ -232,8 +232,8 @@ Response:
 
 | Variable                  | Description                                        | Value in Deployment                         |
 |---------------------------|----------------------------------------------------|----------------------------------------------|
-| `OLLAMA_BASE_URL`         | Ollama API URL                                     | `http://172.17.0.1:11434/api`               |
-| `REDIS_HOST`              | Redis host address                                 | `172.17.0.1`                                |
+| `OLLAMA_BASE_URL`         | Ollama API URL                                     | `http://127.0.0.1:11434/api`               |
+| `REDIS_HOST`              | Redis host address                                 | `127.0.0.1`                                |
 | `REDIS_PORT`              | Redis port                                         | `6379`                                      |
 | `LANG_MODEL_PATH`         | Language model path                                | `/model/programming-language-identification` |
 | `CHATBOT_CHAT_URL`        | Chat endpoint URL                                  | `http://127.0.0.1:8000/chat/`               |
